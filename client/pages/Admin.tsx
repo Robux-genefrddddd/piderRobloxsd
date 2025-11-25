@@ -518,12 +518,12 @@ export default function Admin() {
                           </td>
                           <td className="px-6 py-4">
                             <span className="text-foreground/70">
-                              {license.usedBy ? `${license.usedBy.substring(0, 8)}...` : "-"}
+                              {license.usedBy && typeof license.usedBy === "string" ? `${license.usedBy.substring(0, 8)}...` : "-"}
                             </span>
                           </td>
                           <td className="px-6 py-4">
                             <span className="text-foreground/70 text-sm">
-                              {new Date(license.createdAt).toLocaleDateString()}
+                              {license.createdAt && !isNaN(license.createdAt) ? new Date(license.createdAt).toLocaleDateString() : "-"}
                             </span>
                           </td>
                           <td className="px-6 py-4">
