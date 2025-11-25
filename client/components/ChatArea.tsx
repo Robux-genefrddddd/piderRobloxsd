@@ -1,5 +1,8 @@
-import { Send, Smile } from "lucide-react";
-import { useState } from "react";
+import { Send, Smile, Loader2 } from "lucide-react";
+import { useState, useEffect } from "react";
+import { useAuth } from "@/contexts/AuthContext";
+import { MessagesService, Message } from "@/lib/messages";
+import { toast } from "sonner";
 import {
   Popover,
   PopoverContent,
