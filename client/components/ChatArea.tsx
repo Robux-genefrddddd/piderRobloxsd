@@ -44,9 +44,7 @@ export function ChatArea() {
               backgroundPosition: "center",
               backgroundSize: "cover",
             }}
-          >
-            <span className="text-2xl text-muted-foreground">✨</span>
-          </div>
+          />
           <h2 className="text-xl font-semibold text-foreground mb-2">
             Start a conversation
           </h2>
