@@ -31,7 +31,7 @@ type PlanType = "Free" | "Classic" | "Pro";
 
 export function Sidebar({ isOpen = true, onClose }: SidebarProps) {
   const [conversations, setConversations] = useState<Conversation[]>([
-    { id: 1, name: "New Conversation", active: true },
+    { id: 1, name: "Nouvelle conversation", active: true },
   ]);
   const [messagesUsed] = useState(7);
   const [messagesLimit] = useState(15);
