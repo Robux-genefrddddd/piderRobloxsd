@@ -117,13 +117,6 @@ export default function Login() {
           </Link>
         </div>
 
-        {/* Demo Info */}
-        <div className="mt-8 p-4 bg-white/5 border border-white/10 rounded-lg">
-          <p className="text-xs text-foreground/50">
-            <span className="font-semibold text-white">Demo:</span> Créez un
-            nouveau compte pour commencer
-          </p>
-        </div>
       </div>
     </div>
   );
