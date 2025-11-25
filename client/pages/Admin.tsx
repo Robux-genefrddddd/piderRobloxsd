@@ -225,7 +225,7 @@ export default function Admin() {
                     Utilisateurs Total
                   </span>
                 </div>
-                <p className="text-3xl font-bold text-white">{users.length}</p>
+                <p className="text-3xl font-bold text-white">{users.length || 0}</p>
               </div>
 
               <div className="p-6 bg-white/5 border border-white/10 rounded-xl">
@@ -236,7 +236,7 @@ export default function Admin() {
                   </span>
                 </div>
                 <p className="text-3xl font-bold text-white">
-                  {users.filter((u) => u.plan !== "Free").length}
+                  {users.filter((u) => u.plan !== "Free").length || 0}
                 </p>
               </div>
 
@@ -248,7 +248,7 @@ export default function Admin() {
                   </span>
                 </div>
                 <p className="text-3xl font-bold text-white">
-                  {users.reduce((sum, u) => sum + u.messagesUsed, 0)}
+                  {users.reduce((sum, u) => sum + (u.messagesUsed || 0), 0)}
                 </p>
               </div>
             </div>
