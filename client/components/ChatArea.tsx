@@ -72,7 +72,7 @@ export function ChatArea() {
                 <Smile size={18} />
               </button>
             </PopoverTrigger>
-            <PopoverContent className="w-64 p-3 bg-card border-2 border-foreground/30 rounded-2xl">
+            <PopoverContent className="w-64 p-3 bg-card border-2 border-white rounded-2xl">
               <div className="grid grid-cols-5 gap-2">
                 {EMOJIS.map((emoji) => (
                   <button
