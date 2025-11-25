@@ -243,7 +243,7 @@ export function Sidebar({ isOpen = true, onClose }: SidebarProps) {
               ></div>
             </div>
             <p className="text-xs text-white/60">
-              {messagesLimit - messagesUsed} of {messagesLimit} remaining
+              {messagesLimit - messagesUsed} sur {messagesLimit} restants
             </p>
           </div>
         </div>
