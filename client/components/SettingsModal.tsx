@@ -37,7 +37,7 @@ export function SettingsModal({ isOpen, onOpenChange }: SettingsModalProps) {
       <DialogContent className="bg-card border-2 border-white rounded-xl max-w-md">
         <DialogHeader>
           <DialogTitle className="text-foreground text-lg">
-            Settings
+            Paramètres
           </DialogTitle>
         </DialogHeader>
 
