@@ -336,7 +336,7 @@ export default function Admin() {
                             <td className="px-6 py-4">
                               <input
                                 type="checkbox"
-                                checked={editData.isAdmin ?? user.isAdmin}
+                                checked={editData.isAdmin !== undefined ? editData.isAdmin : (user.isAdmin || false)}
                                 onChange={(e) =>
                                   setEditData({
                                     ...editData,
